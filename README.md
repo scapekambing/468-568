@@ -10,13 +10,16 @@ For ENGR 468/568 Students to share any HDL code from in-class examples. They can
 6. It will be reviewed to ensure that it abides by the repo's structure and for code review (optional) by the repo's maintainers
 7. After each review pass, it may be necessary to repeat 4 - 6.
 
-# Commit Messages
-Ensure that they are meaningul and concsise. It helps if you use these as references:
-1. The following example is a commit message for a new project being added
-   NEW: <github-username>'s implementation of a <project>
-2. The following example is a commit message for an improvement made on an existing project
-   IMP: Added define statements to use async or sync resets
-Essentially, use a 3-4 letter code to describe what you did then elaborate on it.
+# Commit Message Guidelines
+When writing commit messages, follow these guidelines to make them meaningful and concise:
+
+1. For a new project being added:
+   - NEW: Implementing <project> by <github-username>
+
+2. For an improvement made on an existing project:
+   - IMP: Adding define statements for async/sync resets
+
+Use a 3-4 letter code to describe the action, followed by a brief explanation.
 
 # Structure of the Repo
 ```
@@ -24,7 +27,7 @@ Essentially, use a 3-4 letter code to describe what you did then elaborate on it
 |   |-- <project>-<git-username>
 |       |-- design.v / design.sv
 |       |-- tb_design.v / design.sv
-|       |-- if using vunit: run_design.py
+|       |-- if using VUnit: run_design.py
 |       |-- (Other project-specific files, such as a README.md)
 ```
 
