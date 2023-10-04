@@ -44,6 +44,15 @@ module tb_counter();
       `CHECK_EQUAL(1,1);
     end
 
+    `TEST_CASE("check_lower_bound") begin
+      clk = 0;
+      rst = 0;
+      set_lowb = 1;
+      $monitor("i=%d, time=%0t, clk=%b, cout=%d, rst=%b", i, $time, clk, cout, rst);
+      #(clk_period);
+      `CHECK_EQUAL(cout,lowb);
+    end
+
     `TEST_CASE("operation") begin
       clk = 0;
       rst = 0;
